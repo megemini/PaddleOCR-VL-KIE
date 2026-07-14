@@ -221,6 +221,12 @@ This approach produces reproducible annotations with high execution efficiency, 
 
 ### 💫 Character Pixel Density-based Image Scaling Algorithm
 
+This algorithm is based on the following assumption:
+
+> **In optical character recognition (OCR) tasks, as long as the number of pixels occupied by each character exceeds a certain threshold, it will no longer have a substantial impact on the recognition performance.**
+
+In other words, each character only needs a minimum number of pixels to ensure recognition; going far beyond that yields diminishing returns.
+
 Some images in the original datasets have very high resolution; for example, XFUND images are generally above `2000 × 3000`.
 
 Such large images consume significant VRAM for both training and inference, but the images themselves do not actually need such high resolution to carry their text information.
