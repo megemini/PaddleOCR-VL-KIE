@@ -37,6 +37,8 @@
 
 ## ✨️ Introduction
 
+> The model can be downloaded: https://modelscope.cn/models/megemini/PaddleOCR-VL-KIE/summary
+
 The [PaddleOCR-VL-XFUND](https://aistudio.baidu.com/projectdetail/10253559) article used data from [XFUND: A Multilingual Form Understanding Benchmark](https://github.com/doc-analysis/XFUND) for fine-tuning to achieve key information extraction from forms. However, models fine-tuned on a single dataset inevitably exhibit recognition bias and insufficient generalization.
 
 This article introduces the **OCR-KIE** dataset, which collects and consolidates **7** datasets from **4** domains currently available in the open-source community. Based on the **PaddleOCR-VL-1.6** model, we fine-tuned to obtain the **PaddleOCR-VL-KIE** model, and validated its generalization capability on **3** unseen datasets.

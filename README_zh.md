@@ -37,6 +37,8 @@
 
 ## ✨️ 引言
 
+> 模型下载地址: https://modelscope.cn/models/megemini/PaddleOCR-VL-KIE/summary
+
 [PaddleOCR-VL-XFUND](https://aistudio.baidu.com/projectdetail/10253559) 文章中使用 [XFUND: A Multilingual Form Understanding Benchmark](https://github.com/doc-analysis/XFUND) 数据进行的微调任务，实现表单的关键信息抽取。但是，单个数据集微调的模型必然会出现识别倾向，泛化能力不足的问题。
 
 本文将引入 **OCR-KIE** 数据集，此数据集将目前开源领域能够收集到的 **7** 个数据集，分属 **4** 个领域进行和合并整理，基于 **PaddleOCR-VL-1.6** 模型进行微调，得到模型 **PaddleOCR-VL-KIE**，并在 **3** 个未涉及的数据集上进行泛化识别能力的验证。
