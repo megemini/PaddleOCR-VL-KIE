@@ -19,10 +19,10 @@
 
 ---
 
-![](https://ai-studio-static-online.cdn.bcebos.com/2afba10ecddd47a49a6ec93e542ce8e30c7079fb0af7458e9fb91cb8152329c1)
+![](https://ai-studio-static-online.cdn.bcebos.com/2afba10ecddd47a49a6ec93e542ce8e30c7079fb0af7458e9fb91cb8152329c1?v=1)
 
 
-![](https://ai-studio-static-online.cdn.bcebos.com/c20368be09c649b0a7a6f6d5637b38bb54224ea47d334f7e80e91dcc53b63333)
+![](https://ai-studio-static-online.cdn.bcebos.com/c20368be09c649b0a7a6f6d5637b38bb54224ea47d334f7e80e91dcc53b63333?v=1)
 
 > 说明：
 >
@@ -31,7 +31,7 @@
 > GLM-OCR 默认使用 Q8 量化的 mmproj 模型，GLM-OCR F16 使用 F16 的 mmproj 模型
 >
 
-![](https://ai-studio-static-online.cdn.bcebos.com/3bf2f669b0264bceba4f098f2f0127be38824fe52ac547f2be33488f9618978c)
+![](https://ai-studio-static-online.cdn.bcebos.com/3bf2f669b0264bceba4f098f2f0127be38824fe52ac547f2be33488f9618978c?v=1)
 
 ---
 
@@ -77,7 +77,7 @@
 
 根据图片的类别分为：Invoices，Receipts，Forms，Labels 四类。
 
-![](https://ai-studio-static-online.cdn.bcebos.com/03cd12faa9f94b95b6c1d89d2f6f83d933ee2a2d717248f494c3de5cded14c84)
+![](https://ai-studio-static-online.cdn.bcebos.com/03cd12faa9f94b95b6c1d89d2f6f83d933ee2a2d717248f494c3de5cded14c84?v=1)
 
 对于各个数据集做了以下处理：
 
@@ -217,7 +217,7 @@ OCR-KIE 的 prompt 的设计相对两者的区别是：
 
 这样生成的标注数据可复现，执行效率高，而且可以通过不断的添加规则完善具体的情况。
 
-![](https://ai-studio-static-online.cdn.bcebos.com/bc2b8aef8c8c4410a998541fddbfb446d82bf352991241219c27f203ab662b28)
+![](https://ai-studio-static-online.cdn.bcebos.com/bc2b8aef8c8c4410a998541fddbfb446d82bf352991241219c27f203ab662b28?v=1)
 
 ### 💫 基于字符像素密度的图片缩放算法
 
@@ -246,7 +246,7 @@ OCR-KIE 的 prompt 的设计相对两者的区别是：
 5. 根据设定的 `每个字符占用像素数最小值` 与 `有效字符占用像素数` 计算得到图片缩放比例
 6. 设定最大缩放比例、最大图片尺寸等为算法兜底
 
-![](https://ai-studio-static-online.cdn.bcebos.com/91f2278c12c445b19165dd9185531342fe6168562419434cac459aa5322dca5f)
+![](https://ai-studio-static-online.cdn.bcebos.com/91f2278c12c445b19165dd9185531342fe6168562419434cac459aa5322dca5f?v=1)
 
 
 以下是算法的主要代码：
@@ -404,7 +404,7 @@ cd work/ERNIE; CUDA_VISIBLE_DEVICES=0 python -m erniekit.launcher train examples
 
 以下是训练的日志：
 
-![](https://ai-studio-static-online.cdn.bcebos.com/36e4b973664d447a8fd7863055604aeac7e401b8754347a3b9c41ee535abe37b)
+![](https://ai-studio-static-online.cdn.bcebos.com/36e4b973664d447a8fd7863055604aeac7e401b8754347a3b9c41ee535abe37b?v=1)
 
 1. PaddleOCR-VL-1.5/1.6 微调的 loss 基本一致
 2. PaddleOCR-VL-XFUND 的初始 loss 较低，因为它是基于 PaddleOCR-VL-Receipt 模型微调的
@@ -566,11 +566,11 @@ GLM-OCR 与 HunyuanOCR 的 GGUF 模型可以直接获取，PaddleOCR-VL-KIE 的�
 
 如果对以上评测的分数仍然没有很好的概念，可以参考 [CC-OCR](https://modelscope.cn/datasets/Qwen/CC-OCR) 中对于大模型的 KIE 评估的分数对比：
 
-![](https://ai-studio-static-online.cdn.bcebos.com/e95b278ac6c7457b93244a923ac30cd8d1e31fa5516d41f08fb310635266cde6)
+![](https://ai-studio-static-online.cdn.bcebos.com/e95b278ac6c7457b93244a923ac30cd8d1e31fa5516d41f08fb310635266cde6?v=1)
 
 另外，PaddleOCR-VL 模型本身是不具备 KIE 能力的，如果强行使用 Prompt 进行信息抽取，效果与单纯的 OCR 没有区别：
 
-![](https://ai-studio-static-online.cdn.bcebos.com/78afe48f8d5446588796e06687f92d8fb1479fdab7ba4f8a9c5256a51e65a0ac)
+![](https://ai-studio-static-online.cdn.bcebos.com/78afe48f8d5446588796e06687f92d8fb1479fdab7ba4f8a9c5256a51e65a0ac?v=1)
 
 ### 💫 错误分析
 
@@ -578,23 +578,23 @@ GLM-OCR 与 HunyuanOCR 的 GGUF 模型可以直接获取，PaddleOCR-VL-KIE 的�
 
 **列表预测错误**
 
-![](https://ai-studio-static-online.cdn.bcebos.com/c9f0679666c543fd8cd3a60705753663758e3694931c4401b250816a9cec9f3c)
+![](https://ai-studio-static-online.cdn.bcebos.com/c9f0679666c543fd8cd3a60705753663758e3694931c4401b250816a9cec9f3c?v=1)
 
 **KEY-VALUE 关系错误**
 
-![](https://ai-studio-static-online.cdn.bcebos.com/6c95711a48f84216a063a597d52f60a08620263e98ee4d128de07daf4dbe2cba)
+![](https://ai-studio-static-online.cdn.bcebos.com/6c95711a48f84216a063a597d52f60a08620263e98ee4d128de07daf4dbe2cba?v=1)
 
 **特殊符号遗漏**
 
-![](https://ai-studio-static-online.cdn.bcebos.com/898307e53b3a4f05b7a41ad20786927309c850225582410aae2dd652d05bacb5)
+![](https://ai-studio-static-online.cdn.bcebos.com/898307e53b3a4f05b7a41ad20786927309c850225582410aae2dd652d05bacb5?v=1)
 
 **不能预测空字段**
 
-![](https://ai-studio-static-online.cdn.bcebos.com/4db3ee1ab84f4281847840faf096037e673c80226d7542d59fb0f1d2b25c8c24)
+![](https://ai-studio-static-online.cdn.bcebos.com/4db3ee1ab84f4281847840faf096037e673c80226d7542d59fb0f1d2b25c8c24?v=1)
 
 **遗漏空格**
 
-![](https://ai-studio-static-online.cdn.bcebos.com/83ac1f724e494f738250148ccfe98b43be52137e55444f21aa68de8427b86da9)
+![](https://ai-studio-static-online.cdn.bcebos.com/83ac1f724e494f738250148ccfe98b43be52137e55444f21aa68de8427b86da9?v=1)
 
 ## ✨️ 总结
 
