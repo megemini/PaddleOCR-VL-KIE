@@ -1,0 +1,30 @@
+Predictions saved to: hunyuanocr-other/predictions.jsonl
+Log saved to: hunyuanocr-other/evaluation.log
+
+======================================================================
+EVALUATION SUMMARY
+======================================================================
+Model: PaddleOCR-VL (OpenAI API)
+Prompt Type: hunyuan
+Total Samples: 129
+Processed Samples: 129
+Failed Samples: 0
+Overall Accuracy: 80.26%
+Total Time: 574.82s
+Avg Time/Sample: 4.456s
+
+----------------------------------------------------------------------
+STATS BY CATEGORY
+----------------------------------------------------------------------
+Category           Total  Processed   Failed   Accuracy  Field Acc
+----------------------------------------------------------------------
+增值税发票                 50         50        0    73.03%    72.76%
+机动车发票                 29         29        0    86.20%    86.83%
+身份证                   50         50        0    84.03%    77.14%
+======================================================================
+Results saved to: hunyuanocr-other/evaluation_results.json
+
+All results saved to: hunyuanocr-other
+  - Evaluation results: hunyuanocr-other/evaluation_results.json
+  - Predictions: hunyuanocr-other/predictions.jsonl
+  - Log: hunyuanocr-other/evaluation.log

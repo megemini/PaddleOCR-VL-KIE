@@ -1,0 +1,47 @@
+Predictions saved to: paddleocr-vl-kie-1.5/predictions.jsonl
+Log saved to: paddleocr-vl-kie-1.5/evaluation.log
+
+======================================================================
+EVALUATION SUMMARY
+======================================================================
+Model: PaddleOCR-VL-KIE-1.5
+Prompt Type: paddleocr
+Total Samples: 889
+Processed Samples: 889
+Failed Samples: 0
+Overall Accuracy: 68.17%
+Total Time: 2497.13s
+Avg Time/Sample: 2.809s
+
+----------------------------------------------------------------------
+STATS BY DATASET
+----------------------------------------------------------------------
+Dataset                 Total  Processed   Failed   Accuracy
+----------------------------------------------------------------------
+CORD-v2                    84         84        0    75.60%
+FATURA                    255        255        0    84.86%
+SIBR                       84         84        0    70.04%
+SROIE                     117        117        0    87.39%
+nutritional                35         35        0    22.29%
+wildreceipt               189        189        0    48.60%
+xfund                     125        125        0    52.32%
+
+----------------------------------------------------------------------
+STATS BY XFUND LANGUAGE
+----------------------------------------------------------------------
+Language           Total  Processed   Failed   Accuracy
+----------------------------------------------------------------------
+de                    24         24        0    42.40%
+es                    18         18        0    41.03%
+fr                    13         13        0    49.72%
+it                    15         15        0    62.28%
+ja                    19         19        0    54.73%
+pt                    18         18        0    57.12%
+zh                    18         18        0    63.10%
+======================================================================
+Results saved to: paddleocr-vl-kie-1.5/evaluation_results.json
+
+All results saved to: paddleocr-vl-kie-1.5
+  - Evaluation results: paddleocr-vl-kie-1.5/evaluation_results.json
+  - Predictions: paddleocr-vl-kie-1.5/predictions.jsonl
+  - Log: paddleocr-vl-kie-1.5/evaluation.log

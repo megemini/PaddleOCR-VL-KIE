@@ -1,0 +1,47 @@
+Predictions saved to: glm-ocr/predictions.jsonl
+Log saved to: glm-ocr/evaluation.log
+
+======================================================================
+EVALUATION SUMMARY
+======================================================================
+Model: GLM-OCR
+Prompt Type: glm
+Total Samples: 889
+Processed Samples: 888
+Failed Samples: 1
+Overall Accuracy: 44.56%
+Total Time: 2647.91s
+Avg Time/Sample: 2.982s
+
+----------------------------------------------------------------------
+STATS BY DATASET
+----------------------------------------------------------------------
+Dataset                 Total  Processed   Failed   Accuracy
+----------------------------------------------------------------------
+CORD-v2                    84         84        0    18.25%
+FATURA                    255        255        0    59.59%
+SIBR                       84         84        0    53.52%
+SROIE                     117        117        0    61.54%
+nutritional                35         35        0     6.33%
+wildreceipt               189        189        0    36.26%
+xfund                     125        124        1    32.82%
+
+----------------------------------------------------------------------
+STATS BY XFUND LANGUAGE
+----------------------------------------------------------------------
+Language           Total  Processed   Failed   Accuracy
+----------------------------------------------------------------------
+de                    24         24        0    24.59%
+es                    18         18        0    32.00%
+fr                    13         13        0    32.17%
+it                    15         15        0    42.28%
+ja                    19         18        1    31.00%
+pt                    18         18        0    26.48%
+zh                    18         18        0    45.39%
+======================================================================
+Results saved to: glm-ocr/evaluation_results.json
+
+All results saved to: glm-ocr
+  - Evaluation results: glm-ocr/evaluation_results.json
+  - Predictions: glm-ocr/predictions.jsonl
+  - Log: glm-ocr/evaluation.log

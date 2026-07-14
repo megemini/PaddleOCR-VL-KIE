@@ -1,0 +1,47 @@
+Predictions saved to: paddleocr-vl-kie/predictions.jsonl
+Log saved to: paddleocr-vl-kie/evaluation.log
+
+======================================================================
+EVALUATION SUMMARY
+======================================================================
+Model: PaddleOCR-VL-KIE
+Prompt Type: paddleocr
+Total Samples: 889
+Processed Samples: 889
+Failed Samples: 0
+Overall Accuracy: 75.99%
+Total Time: 2519.72s
+Avg Time/Sample: 2.834s
+
+----------------------------------------------------------------------
+STATS BY DATASET
+----------------------------------------------------------------------
+Dataset                 Total  Processed   Failed   Accuracy
+----------------------------------------------------------------------
+CORD-v2                    84         84        0    75.00%
+FATURA                    255        255        0    95.87%
+SIBR                       84         84        0    72.33%
+SROIE                     117        117        0    87.82%
+nutritional                35         35        0    63.72%
+wildreceipt               189        189        0    64.81%
+xfund                     125        125        0    47.82%
+
+----------------------------------------------------------------------
+STATS BY XFUND LANGUAGE
+----------------------------------------------------------------------
+Language           Total  Processed   Failed   Accuracy
+----------------------------------------------------------------------
+de                    24         24        0    49.76%
+es                    18         18        0    41.06%
+fr                    13         13        0    36.67%
+it                    15         15        0    62.59%
+ja                    19         19        0    53.36%
+pt                    18         18        0    39.65%
+zh                    18         18        0    50.10%
+======================================================================
+Results saved to: paddleocr-vl-kie/evaluation_results.json
+
+All results saved to: paddleocr-vl-kie
+  - Evaluation results: paddleocr-vl-kie/evaluation_results.json
+  - Predictions: paddleocr-vl-kie/predictions.jsonl
+  - Log: paddleocr-vl-kie/evaluation.log

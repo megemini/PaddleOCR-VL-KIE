@@ -1,0 +1,47 @@
+Predictions saved to: glm-ocr-f16/predictions.jsonl
+Log saved to: glm-ocr-f16/evaluation.log
+
+======================================================================
+EVALUATION SUMMARY
+======================================================================
+Model: GLM-OCR F16
+Prompt Type: glm
+Total Samples: 889
+Processed Samples: 888
+Failed Samples: 1
+Overall Accuracy: 44.42%
+Total Time: 2547.07s
+Avg Time/Sample: 2.868s
+
+----------------------------------------------------------------------
+STATS BY DATASET
+----------------------------------------------------------------------
+Dataset                 Total  Processed   Failed   Accuracy
+----------------------------------------------------------------------
+CORD-v2                    84         84        0    19.05%
+FATURA                    255        255        0    59.59%
+SIBR                       84         84        0    52.80%
+SROIE                     117        117        0    60.68%
+nutritional                35         35        0     6.33%
+wildreceipt               189        189        0    36.03%
+xfund                     125        124        1    32.91%
+
+----------------------------------------------------------------------
+STATS BY XFUND LANGUAGE
+----------------------------------------------------------------------
+Language           Total  Processed   Failed   Accuracy
+----------------------------------------------------------------------
+de                    24         24        0    25.18%
+es                    18         18        0    32.78%
+fr                    13         13        0    32.17%
+it                    15         15        0    42.54%
+ja                    19         18        1    30.57%
+pt                    18         18        0    26.23%
+zh                    18         18        0    44.84%
+======================================================================
+Results saved to: glm-ocr-f16/evaluation_results.json
+
+All results saved to: glm-ocr-f16
+  - Evaluation results: glm-ocr-f16/evaluation_results.json
+  - Predictions: glm-ocr-f16/predictions.jsonl
+  - Log: glm-ocr-f16/evaluation.log

@@ -1,0 +1,47 @@
+Predictions saved to: paddleocr-vl-1.6/predictions.jsonl
+Log saved to: paddleocr-vl-1.6/evaluation.log
+
+======================================================================
+EVALUATION SUMMARY
+======================================================================
+Model: PaddleOCR-VL-1.6
+Prompt Type: paddleocr
+Total Samples: 889
+Processed Samples: 885
+Failed Samples: 4
+Overall Accuracy: 0.00%
+Total Time: 4609.79s
+Avg Time/Sample: 5.209s
+
+----------------------------------------------------------------------
+STATS BY DATASET
+----------------------------------------------------------------------
+Dataset                 Total  Processed   Failed   Accuracy
+----------------------------------------------------------------------
+CORD-v2                    84         84        0     0.00%
+FATURA                    255        255        0     0.00%
+SIBR                       84         84        0     0.00%
+SROIE                     117        117        0     0.00%
+nutritional                35         35        0     0.00%
+wildreceipt               189        188        1     0.00%
+xfund                     125        122        3     0.00%
+
+----------------------------------------------------------------------
+STATS BY XFUND LANGUAGE
+----------------------------------------------------------------------
+Language           Total  Processed   Failed   Accuracy
+----------------------------------------------------------------------
+de                    24         24        0     0.00%
+es                    18         15        3     0.00%
+fr                    13         13        0     0.00%
+it                    15         15        0     0.00%
+ja                    19         19        0     0.00%
+pt                    18         18        0     0.00%
+zh                    18         18        0     0.00%
+======================================================================
+Results saved to: paddleocr-vl-1.6/evaluation_results.json
+
+All results saved to: paddleocr-vl-1.6
+  - Evaluation results: paddleocr-vl-1.6/evaluation_results.json
+  - Predictions: paddleocr-vl-1.6/predictions.jsonl
+  - Log: paddleocr-vl-1.6/evaluation.log

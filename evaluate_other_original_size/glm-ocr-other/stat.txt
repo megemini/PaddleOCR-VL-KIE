@@ -1,0 +1,30 @@
+Predictions saved to: glm-ocr-other/predictions.jsonl
+Log saved to: glm-ocr-other/evaluation.log
+
+======================================================================
+EVALUATION SUMMARY
+======================================================================
+Model: PaddleOCR-VL (OpenAI API)
+Prompt Type: glm
+Total Samples: 129
+Processed Samples: 129
+Failed Samples: 0
+Overall Accuracy: 64.40%
+Total Time: 570.00s
+Avg Time/Sample: 4.419s
+
+----------------------------------------------------------------------
+STATS BY CATEGORY
+----------------------------------------------------------------------
+Category           Total  Processed   Failed   Accuracy  Field Acc
+----------------------------------------------------------------------
+增值税发票                 50         50        0    52.87%    53.17%
+机动车发票                 29         29        0    65.21%    60.50%
+身份证                   50         50        0    75.47%    64.29%
+======================================================================
+Results saved to: glm-ocr-other/evaluation_results.json
+
+All results saved to: glm-ocr-other
+  - Evaluation results: glm-ocr-other/evaluation_results.json
+  - Predictions: glm-ocr-other/predictions.jsonl
+  - Log: glm-ocr-other/evaluation.log

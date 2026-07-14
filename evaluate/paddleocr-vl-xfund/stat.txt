@@ -1,0 +1,47 @@
+Predictions saved to: paddleocr-vl-xfund/predictions.jsonl
+Log saved to: paddleocr-vl-xfund/evaluation.log
+
+======================================================================
+EVALUATION SUMMARY
+======================================================================
+Model: PaddleOCR-VL-XFUND
+Prompt Type: paddleocr
+Total Samples: 889
+Processed Samples: 889
+Failed Samples: 0
+Overall Accuracy: 33.72%
+Total Time: 4482.05s
+Avg Time/Sample: 5.042s
+
+----------------------------------------------------------------------
+STATS BY DATASET
+----------------------------------------------------------------------
+Dataset                 Total  Processed   Failed   Accuracy
+----------------------------------------------------------------------
+CORD-v2                    84         84        0     3.37%
+FATURA                    255        255        0    47.43%
+SIBR                       84         84        0    40.24%
+SROIE                     117        117        0    26.92%
+nutritional                35         35        0     5.41%
+wildreceipt               189        189        0    31.51%
+xfund                     125        125        0    39.43%
+
+----------------------------------------------------------------------
+STATS BY XFUND LANGUAGE
+----------------------------------------------------------------------
+Language           Total  Processed   Failed   Accuracy
+----------------------------------------------------------------------
+de                    24         24        0    31.84%
+es                    18         18        0    35.02%
+fr                    13         13        0    36.69%
+it                    15         15        0    58.25%
+ja                    19         19        0    28.40%
+pt                    18         18        0    43.83%
+zh                    18         18        0    47.46%
+======================================================================
+Results saved to: paddleocr-vl-xfund/evaluation_results.json
+
+All results saved to: paddleocr-vl-xfund
+  - Evaluation results: paddleocr-vl-xfund/evaluation_results.json
+  - Predictions: paddleocr-vl-xfund/predictions.jsonl
+  - Log: paddleocr-vl-xfund/evaluation.log

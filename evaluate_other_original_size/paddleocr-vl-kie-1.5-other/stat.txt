@@ -1,0 +1,30 @@
+Predictions saved to: paddleocr-vl-kie-1.5-other/predictions.jsonl
+Log saved to: paddleocr-vl-kie-1.5-other/evaluation.log
+
+======================================================================
+EVALUATION SUMMARY
+======================================================================
+Model: PaddleOCR-VL (OpenAI API)
+Prompt Type: paddleocr
+Total Samples: 129
+Processed Samples: 129
+Failed Samples: 0
+Overall Accuracy: 62.32%
+Total Time: 364.27s
+Avg Time/Sample: 2.824s
+
+----------------------------------------------------------------------
+STATS BY CATEGORY
+----------------------------------------------------------------------
+Category           Total  Processed   Failed   Accuracy  Field Acc
+----------------------------------------------------------------------
+增值税发票                 50         50        0    39.12%    39.31%
+机动车发票                 29         29        0    73.09%    77.12%
+身份证                   50         50        0    79.27%    70.00%
+======================================================================
+Results saved to: paddleocr-vl-kie-1.5-other/evaluation_results.json
+
+All results saved to: paddleocr-vl-kie-1.5-other
+  - Evaluation results: paddleocr-vl-kie-1.5-other/evaluation_results.json
+  - Predictions: paddleocr-vl-kie-1.5-other/predictions.jsonl
+  - Log: paddleocr-vl-kie-1.5-other/evaluation.log
