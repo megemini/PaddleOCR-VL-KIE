@@ -1,7 +1,7 @@
 
 # PaddleOCR-VL-KIE Fine-tuning on KIE Datasets for Information Extraction
 
-> 💥💥💥 [PaddleOCR-VL-XFUND](https://aistudio.baidu.com/projectdetail/10253559) **Pro** **Max** version models & OCR-KIE dataset
+> 💥💥💥 PaddleOCR-VL-KIE is [PaddleOCR-VL-XFUND](https://aistudio.baidu.com/projectdetail/10253559) **Pro** **Max** version models & on OCR-KIE dataset
 >
 > **Pro**
 >
@@ -223,12 +223,6 @@ This approach produces reproducible annotations with high execution efficiency, 
 
 ### 💫 Character Pixel Density-based Image Scaling Algorithm
 
-This algorithm is based on the following assumption:
-
-> **In optical character recognition (OCR) tasks, as long as the number of pixels occupied by each character exceeds a certain threshold, it will no longer have a substantial impact on the recognition performance.**
-
-In other words, each character only needs a minimum number of pixels to ensure recognition; going far beyond that yields diminishing returns.
-
 Some images in the original datasets have very high resolution; for example, XFUND images are generally above `2000 × 3000`.
 
 Such large images consume significant VRAM for both training and inference, but the images themselves do not actually need such high resolution to carry their text information.
@@ -239,7 +233,47 @@ Currently, there is no well-established method for this. The similar SWT (Stroke
 
 However, this algorithm targets ordinary life scenes rather than document images, and practical testing shows it cannot effectively scale down document images.
 
-This article proposes a Character Pixel Density-based Image Scaling Algorithm for document and text images:
+This article proposes a Character Pixel Density-based Image Scaling Algorithm for document and text images, based on the following assumption:
+
+> **In optical character recognition (OCR) tasks, as long as the number of pixels occupied by each character exceeds a certain threshold, it will no longer have a substantial impact on the recognition performance.**
+
+In other words, each character only needs a minimum number of pixels to ensure recognition; going far beyond that yields diminishing returns.
+
+An experiment was designed to test the model's "visual acuity". Below is an "eye chart" that randomly displays the characters `由 日 月 田 正 口` from top to bottom, largest to smallest:
+
+![](https://ai-studio-static-online.cdn.bcebos.com/836834bd742e4376a7a4353a9c3148aa678cce7be06348158c3d51b8a205e766?v=1)
+
+The experiment tests at which character size the recognition rate begins to decline. The average pixels per character for each row is as follows:
+
+**Test Image Character Density**
+
+| Image | Chars | Total Pixels | Avg Pixels/Char |
+|-------|-------|--------------|-----------------|
+| t1.png | 5 | 10225 | 2045.00 |
+| t2.png | 7 | 8526 | 1218.00 |
+| t3.png | 9 | 4538 | 504.22 |
+| t4.png | 11 | 1684 | 153.09 |
+| t5.png | 13 | 1069 | 82.23 |
+| t6.png | 15 | 775 | 51.67 |
+| t7.png | 17 | 574 | 33.76 |
+
+Below are the experimental results:
+
+**PaddleOCR-VL-1.6 Test Results**
+
+| Image | GT | Pred | Ratio |
+|-------|-----|------|-------|
+| t1 | 由日田正口 | 由日田正口 | 1.00 |
+| t2 | 正月日口田田由 | 正月日口田田由 | 1.00 |
+| t3 | 月由田由口田正日正 | 月由田由口田正日正 | 1.00 |
+| t4 | 由口由田正月正口正田日 | 由口由田正月正口正田日 | 1.00 |
+| t5 | 日口由口月月日由正正田田正 | 日口由口月月日由正正田田正 | 1.00 |
+| t6 | 正口日日口月口由正正由田由田月 | 正口日日口月月口由正正由田由田月 | 0.97 |
+| t7 | 田正正日日田口月月由由由口正正田口 | 田正正日日日田口月月田由田口正正田口 | 0.86 |
+
+The results show that the recognition rate begins to decline at approximately `50 pix/char`, which serves as the basis for subsequent applications.
+
+The algorithm's basic logic is:
 
 1. Use Otsu's threshold to binarize the grayscale image, separating text from background (typically white)
 2. Count the number of black pixels in the binarized image (text is typically black)
