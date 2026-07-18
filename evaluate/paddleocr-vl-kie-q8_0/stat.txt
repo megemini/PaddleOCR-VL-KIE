@@ -1,0 +1,47 @@
+Predictions saved to: paddleocr-vl-kie-q8_0/predictions.jsonl
+Log saved to: paddleocr-vl-kie-q8_0/evaluation.log
+
+======================================================================
+EVALUATION SUMMARY
+======================================================================
+Model: PaddleOCR-VL (OpenAI API)
+Prompt Type: paddleocr
+Total Samples: 889
+Processed Samples: 889
+Failed Samples: 0
+Overall Accuracy: 75.81%
+Total Time: 1773.68s
+Avg Time/Sample: 1.995s
+
+----------------------------------------------------------------------
+STATS BY DATASET
+----------------------------------------------------------------------
+Dataset                 Total  Processed   Failed   Accuracy
+----------------------------------------------------------------------
+CORD-v2                    84         84        0    74.60%
+FATURA                    255        255        0    95.48%
+SIBR                       84         84        0    71.92%
+SROIE                     117        117        0    87.39%
+nutritional                35         35        0    62.00%
+wildreceipt               189        189        0    65.12%
+xfund                     125        125        0    48.31%
+
+----------------------------------------------------------------------
+STATS BY XFUND LANGUAGE
+----------------------------------------------------------------------
+Language           Total  Processed   Failed   Accuracy
+----------------------------------------------------------------------
+de                    24         24        0    47.37%
+es                    18         18        0    40.83%
+fr                    13         13        0    42.96%
+it                    15         15        0    63.37%
+ja                    19         19        0    52.01%
+pt                    18         18        0    38.53%
+zh                    18         18        0    54.26%
+======================================================================
+Results saved to: paddleocr-vl-kie-q8_0/evaluation_results.json
+
+All results saved to: paddleocr-vl-kie-q8_0
+  - Evaluation results: paddleocr-vl-kie-q8_0/evaluation_results.json
+  - Predictions: paddleocr-vl-kie-q8_0/predictions.jsonl
+  - Log: paddleocr-vl-kie-q8_0/evaluation.log
