@@ -505,8 +505,9 @@ GLM-OCR and HunyuanOCR's GGUF models are directly available; PaddleOCR-VL-KIE's 
 **Overall Accuracy Ranking**
 
 | Model | Accuracy |
-|-------|----------|
+|------|--------|
 | **PaddleOCR-VL-KIE** | **75.99%** |
+| PaddleOCR-VL-KIE-Q8_0 | 75.81% |
 | PaddleOCR-VL-KIE-1.5 | 68.17% |
 | HunyuanOCR | 45.06% |
 | GLM-OCR | 44.56% |
@@ -515,34 +516,34 @@ GLM-OCR and HunyuanOCR's GGUF models are directly available; PaddleOCR-VL-KIE's 
 
 **Per-dataset Accuracy Comparison**
 
-| Dataset | PaddleOCR-VL-KIE | PaddleOCR-VL-KIE-1.5 | HunyuanOCR | GLM-OCR | GLM-OCR F16 | PaddleOCR-VL-XFUND |
-|---------|:---:|:---:|:---:|:---:|:---:|:---:|
-| CORD-v2 | 75.00% | 75.60% | 0.00% | 18.25% | 19.05% | 3.37% |
-| FATURA | **95.87%** | 84.86% | 56.93% | 59.59% | 59.59% | 47.43% |
-| SIBR | 72.33% | 70.04% | 42.15% | 53.52% | 52.80% | 40.24% |
-| SROIE | **87.82%** | 87.39% | 80.13% | 61.54% | 60.68% | 26.92% |
-| nutritional | **63.72%** | 22.29% | 5.93% | 6.33% | 6.33% | 5.41% |
-| wildreceipt | **64.81%** | 48.60% | 42.40% | 36.26% | 36.03% | 31.51% |
-| xfund | 47.82% | 52.32% | 35.23% | 32.82% | 32.91% | 39.43% |
+| Dataset | PaddleOCR-VL-KIE | PaddleOCR-VL-KIE-Q8_0 | PaddleOCR-VL-KIE-1.5 | HunyuanOCR | GLM-OCR | GLM-OCR F16 | PaddleOCR-VL-XFUND |
+|--------|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| CORD-v2 | 75.00% | 74.60% | **75.60%** | 0.00% | 18.25% | 19.05% | 3.37% |
+| FATURA | **95.87%** | 95.48% | 84.86% | 56.93% | 59.59% | 59.59% | 47.43% |
+| SIBR | **72.33%** | 71.92% | 70.04% | 42.15% | 53.52% | 52.80% | 40.24% |
+| SROIE | **87.82%** | 87.39% | 87.39% | 80.13% | 61.54% | 60.68% | 26.92% |
+| nutritional | **63.72%** | 62.00% | 22.29% | 5.93% | 6.33% | 6.33% | 5.41% |
+| wildreceipt | 64.81% | **65.12%** | 48.60% | 42.40% | 36.26% | 36.03% | 31.51% |
+| xfund | 47.82% | 48.31% | **52.32%** | 35.23% | 32.82% | 32.91% | 39.43% |
 
 **xfund Multilingual Accuracy**
 
-| Language | PaddleOCR-VL-KIE | PaddleOCR-VL-KIE-1.5 | HunyuanOCR | GLM-OCR | GLM-OCR F16 | PaddleOCR-VL-XFUND |
-|----------|:---:|:---:|:---:|:---:|:---:|:---:|
-| de | 49.76% | 42.40% | 26.54% | 24.59% | 25.18% | 31.84% |
-| es | 41.06% | 41.03% | 25.32% | 32.00% | 32.78% | 35.02% |
-| fr | 36.67% | **49.72%** | 37.27% | 32.17% | 32.17% | 36.69% |
-| it | 62.59% | 62.28% | 53.46% | 42.28% | 42.54% | 58.25% |
-| ja | 53.36% | **54.73%** | 22.77% | 31.00% | 30.57% | 28.40% |
-| pt | 39.65% | **57.12%** | 39.75% | 26.48% | 26.23% | 43.83% |
-| zh | 50.10% | **63.10%** | 48.67% | 45.39% | 44.84% | 47.46% |
+| Language | PaddleOCR-VL-KIE | PaddleOCR-VL-KIE-Q8_0 | PaddleOCR-VL-KIE-1.5 | HunyuanOCR | GLM-OCR | GLM-OCR F16 | PaddleOCR-VL-XFUND |
+|------|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| de | **49.76%** | 47.37% | 42.40% | 26.54% | 24.59% | 25.18% | 31.84% |
+| es | **41.06%** | 40.83% | 41.03% | 25.32% | 32.00% | 32.78% | 35.02% |
+| fr | 36.67% | 42.96% | **49.72%** | 37.27% | 32.17% | 32.17% | 36.69% |
+| it | 62.59% | **63.37%** | 62.28% | 53.46% | 42.28% | 42.54% | 58.25% |
+| ja | 53.36% | 52.01% | **54.73%** | 22.77% | 31.00% | 30.57% | 28.40% |
+| pt | 39.65% | 38.53% | **57.12%** | 39.75% | 26.48% | 26.23% | 43.83% |
+| zh | 50.10% | 54.26% | **63.10%** | 48.67% | 45.39% | 44.84% | 47.46% |
 
 **Key Findings**
 
 1. **PaddleOCR-VL-KIE is the overall best** (75.99%), achieving the best results on FATURA, SROIE, nutritional, and wildreceipt datasets
 2. **PaddleOCR-VL-KIE-1.5** (68.17%) outperforms PaddleOCR-VL-KIE on certain xfund languages (fr, ja, pt, zh)
 3. **The nutritional dataset shows the largest gap**: PaddleOCR-VL-KIE at 63.72%, while all other models are below 23%
-4. **GLM-OCR and GLM-OCR F16** perform nearly identically (44.56% vs 44.42%); F16 precision has no significant impact
+4. **PaddleOCR-VL-KIE-Q8_0 and FP16** perform nearly identically (75.81% vs 75.99%); F16 precision has no significant impact, Q8 about 30% faster
 5. **PaddleOCR-VL-XFUND** performs worst (33.72%), especially on CORD-v2 and SROIE
 
 To test the model's generalization ability, several external data recognition results were tested.
